@@ -77,7 +77,7 @@ switch ($_SERVER["REQUEST_METHOD"]){
 
 
         // anropa createCourse metod för att lägga till en rad i databastabellen
-        if ($courses->updateCourse($data['code'], $data['name'], $data['progression'], $data['syllabus'], $data['id'])) { // object access 
+        if ($courses->updateCourse($data['code'], $data['name'], $data['progression'], $data['syllabus'], $id)) { // object access 
             http_response_code(200);
             $result = array("message" => "kurs är uppdaterad!");
         } else {
