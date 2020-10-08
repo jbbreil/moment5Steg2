@@ -24,4 +24,4 @@ Webbsida ska listar kurserna i ett tabell genom att konsumera REST-webbtjänst v
 
 ### 2. Klona projekt:
 
-git clone https://github.com/jbbreil/moment5Steg1.git
+git clone https://github.com/jbbreil/moment5Steg2.git
