@@ -25,3 +25,9 @@ Webbsida ska listar kurserna i ett tabell genom att konsumera REST-webbtjänst v
 ### 2. Klona projekt:
 
 git clone https://github.com/jbbreil/moment5Steg2.git
+
+### 3. Initialisering konsol kommando:
+
+1. npm install --save --dev
+
+2. gulp
