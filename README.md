@@ -11,7 +11,7 @@ Webbtjänsten är skapad med objektorienterad PHP-programmering med anslutning m
 Webbsida ska listar kurserna i ett tabell genom att konsumera REST-webbtjänst via Fetch-anrop.
 
 
-### 1. Sätt upp databasen:
+### 1.1 Sätt upp databasen:
    CREATE TABLE IF NOT EXISTS `courses` (
    `id` int(11) NOT NULL,
    `code` text NOT NULL,
@@ -21,6 +21,11 @@ Webbsida ska listar kurserna i ett tabell genom att konsumera REST-webbtjänst v
    PRIMARY KEY (id)
    ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+### 1.2 Skapa databas användernamn:
+   HOST: localhost
+   USER: dbtest
+   PAASWORD: password
+   DATABASE: dbtest
 
 ### 2. Klona projekt:
 
