@@ -1,0 +1,57 @@
+@import 'reset';
+
+//Variables
+
+$fa-font-path:   "../font";
+
+$font-stack:    Copse, Helvetica, sans-serif;
+$primary-color: #333;
+$lighten-color: lighten($primary-color, 25%);
+
+$backgrouond: rgb(255, 255, 255);
+$border: 2px solid $lighten-color;
+$shadow: 5px 5px 5px #777777;
+
+$text-color: rgb(77, 77, 77);
+$link-hover-color: rgb(212, 0, 255);
+
+// Reusable code block
+
+@mixin box { 
+    background-color: #e4dcdc;
+    border: $border;
+    color: $text-color;
+    padding: 10px;
+    margin: 10px;
+    -moz-box-shadow: $shadow;
+    -webkit-box-shadow: $shadow;
+    box-shadow: $shadow;
+    min-height: 29em;
+}
+
+@mixin boxes { 
+    height: 150px !important; 
+    width: 100%;
+}
+
+@mixin image-default {
+    cursor: pointer;
+    background-color: $backgrouond;
+    width: 49%;
+    position:relative;
+    margin:20px;
+    outline: 2px solid $color3;
+    box-sizing:border-box;
+    text-align:center;
+    overflow:hidden;
+}
+
+@mixin image-transform ($scale-property, $transition-property) {
+    transform: $scale-property;
+    -webkit-transform: $scale-property;
+    -ms-transform: $scale-property;
+
+    transition: $transition-property;
+    -webkit-transform: $transition-property;
+    -ms-transform: $transition-property;
+}

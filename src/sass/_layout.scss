@@ -1,0 +1,108 @@
+@import 'base';
+
+body {
+  max-width: 900px;
+  font-family: Copse, Helvetica, sans-serif;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+  font-size: 1.2em;
+  color: $text-color;
+  font-weight: 300;
+}
+
+header,
+main,
+footer {
+  background-color: $backgrouond;
+  padding: 20px;
+}
+
+.submit-btn {
+  margin-top: 10px;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1 {
+  line-height: 1.5em;
+}
+
+a {
+  text-decoration: none;
+  color: $link-hover-color;
+  opacity: 0.7;
+}
+
+a:hover {
+  color: $link-hover-color;
+  opacity: 1;
+}
+
+.box {
+  @include box;
+}
+
+// TABLE
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+// FORM
+#form-container{
+width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  > div {
+    flex: 1;
+  }
+}
+
+
+input {
+  padding: 15px;
+}
+  // FOOTER
+footer p {
+  text-align: center;
+}
+  span {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+// MOBILE MENU
+
+.topnav a.icon {
+  display: none;
+}
+
+
+// MOBILE RESOLUTION
+
+@media only screen and (max-width: 610px) {
+  h1 {
+    line-height: 1.5em;
+  }
+ // FORM
+form{
+  flex-direction: column;
+}
+}
