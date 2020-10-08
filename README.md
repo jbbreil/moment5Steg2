@@ -8,7 +8,7 @@ Den här wbbtjänsten är skapad med PHP och hanterar information om de kurser j
 Den läser in data från en databas och hämtas ut i JSON-format som hanterar via REST-webbtjänst med full CRUD-funktionalitet. 
 Webbtjänsten är skapad med objektorienterad PHP-programmering med anslutning mot MySQL-databasserver.
 
-Webbsida ska listar kurserna i ett tabell genom att konsumera REST-webbtjänst via Fetch-anrop för att hämta (GET), skicka (POST) och radera data (DELETE) från och till webbtjänsten. Uppdatera (PUT) ligger med i CRUD-funktionalitet med det är inte klart kodat.
+Webbsidan ska listar kurserna i ett tabell genom att konsumera REST-webbtjänst via Fetch-anrop för att hämta (GET), skicka (POST) och radera data (DELETE) från och till webbtjänsten. Uppdatera (PUT) ligger med i CRUD-funktionalitet med det är inte klart kodat.
 HTML och SASS används till webbsidas layout.
 
 
