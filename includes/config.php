@@ -13,7 +13,7 @@ ini_set("display_errors", 1);     // Display all errors
      
 // Aktivera autoladdning för att påskynda registreringen av klasser som behövs
 spl_autoload_register(function ($class) {
-    include 'guestbook_classes/' . $class . '.class.php';
+    include 'classes/' . $class . '.class.php';
 });
 
 require "classes/Courses.class.php";
