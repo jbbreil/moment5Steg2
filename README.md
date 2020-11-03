@@ -6,7 +6,7 @@
 
 Webbapplikationen läser ut befintliga kurser och ha möjlighet att lägga till nya via ett formulär. Kursena listar i ett tabell genom att konsumera REST-webbtjänsten via Fetch API anrop för att hämta (GET), skicka (POST) och radera data (DELETE) från och till webbtjänsten. Uppdatera (PUT) ligger med i CRUD-funktionalitet med det är inte klart kodat.
 
-Webbsidas layout består av en enkel tabel och förmulär som har skapat med HTML och SASS.
+Webbsidas layout består av en enkel tabel och ett förmulär som har skapat med HTML och SASS.
 
 ### 1.1 Sätt upp databasen via SQL-fråga:
 
