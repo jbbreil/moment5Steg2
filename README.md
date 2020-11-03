@@ -2,15 +2,11 @@
 
 ### av Gianluca Incandela giin1900@student.miun.se
 
-## Moment 5 - REST api PHP - Steg 1
+## Moment 5 - klient-applikation:
 
-Den här wbbtjänsten är skapad med PHP och hanterar information om de kurser jag läst tidigare i programmet.
-Den läser in data från en databas och hämtas ut i JSON-format som hanterar via REST-webbtjänst med full CRUD-funktionalitet. 
-Webbtjänsten är skapad med objektorienterad PHP-programmering med anslutning mot MySQL-databasserver.
+Webbapplikationen läser ut befintliga kurser och ha möjlighet att lägga till nya via ett formulär. Kursena listar i ett tabell genom att konsumera REST-webbtjänsten via Fetch API anrop för att hämta (GET), skicka (POST) och radera data (DELETE) från och till webbtjänsten. Uppdatera (PUT) ligger med i CRUD-funktionalitet med det är inte klart kodat.
 
-Webbsidan ska listar kurserna i ett tabell genom att konsumera REST-webbtjänst via Fetch-anrop för att hämta (GET), skicka (POST) och radera data (DELETE) från och till webbtjänsten. Uppdatera (PUT) ligger med i CRUD-funktionalitet med det är inte klart kodat.
-HTML och SASS används till webbsidas layout.
-
+Webbsidas layout består av en enkel tabel och förmulär som har skapat med HTML och SASS.
 
 ### 1.1 Sätt upp databasen via SQL-fråga:
 
@@ -44,7 +40,11 @@ INSERT INTO `courses` (`id`, `code`, `name`, `progression`, `syllabus`) VALUES
 
 git clone https://github.com/jbbreil/moment5Steg2.git
 
-### 3. Initialisering konsol kommando:
+### 3. XAMPP installation:
+
+Installera xampp-application för att hämta JSON-datakälla ur databasen i lokalt.
+
+### 4. Initialisering konsol kommando:
 
 1. npm install --save --dev
 
