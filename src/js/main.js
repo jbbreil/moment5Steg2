@@ -2,9 +2,9 @@
 
 // variabler 
 
-let url = "http://localhost/Moment5.2/restful";
+let url = "http://localhost/Moment5steg2/restful";
 
-let coursesEl = document.getElementById('courses-table');
+let coursesEl = document.getElementById('courses-output');
 
 let addCoursebtn = document.getElementById('addCourse');
 let editCoursebtn = document.getElementById('editCourse');
@@ -32,7 +32,7 @@ function getCourses() {
             coursesEl.innerHTML += 
             '<tbody> '+
             '<tr>'+
-            '<td>' +course.code+ 'disabled</td>'+
+            '<td>' +course.code+ '</td>'+
             '<td>'+course.name+ '</td>'+
             '<td>'+course.progression+'</td>'+
             '<td><a target="_blank" href='+course.syllabus+'>'+'Webblänk</a></td>'+
@@ -49,7 +49,7 @@ function getCourses() {
 
 function deleteCourse(id){
 
-    let url = "http://localhost/Moment5.2/restful?id=";
+    let url = "http://localhost/Moment5steg2/restful?id=";
     fetch(url + id, {
         //url: "courses/delete/"+id, 
         method: "DELETE",
@@ -73,7 +73,7 @@ function deleteCourse(id){
 
 // uppdatera kurn
 
-function editCourse(val, id){
+/*function editCourse(val, id){
 
     let url = "http://localhost/Moment5.2/restful?id=";
 
@@ -96,7 +96,7 @@ function editCourse(val, id){
       console.error('Error:', error);
     });
 
-} 
+} */
 
 // Lägga till kurs 
 
@@ -113,7 +113,7 @@ function addCourse() {
 
     // göra om i json fromat och skicka i självsa anropet
 
-    let url = "http://localhost/Moment5.2/restful";
+    let url = "http://localhost/Moment5steg2/restful";
 
     fetch(url, {
         method: "POST",
